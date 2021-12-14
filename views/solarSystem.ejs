@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/solarSystem.css" type="text/css">
+
+
+    <%- include('../views/partials/head') %>
+</head>
+
+<body>
+
+    <script type="module" src="/scripts/solarSystem.js"></script>
+
+
+    <script src="/scripts/solarSystem.js" defer></script>
+    <div id="three-container">
+        <div id="canvas-container"></div>
+        <div class="gui-container">
+            <div id="planet-selector">
+                <button id="sun">sun</button>
+                <button id="mercury">mercury</button>
+                <button id="venus">venus</button>
+                <button id="earth">earth</button>
+                <button id="mars">mars</button>
+                <button id="jupiter">jupiter</button>
+                <button id="saturn">saturn</button>
+                <button id="uranus">uranus</button>
+                <button id="neptune">neptune</button>
+            </div>
+            <div id="orbit-path-container">
+                <input type="checkbox" name="orbit-path" id="orbit-path" checked>
+            </div>
+            <div class="fullscreen-select-container">
+                <button id="fullscreen">Fullscreen</button>
+            </div>
+            <div id="mass-slider"></div>
+            <div id="path-check"></div>
+        </div>
+
+    </div>
+    <footer>
+        <%- include('../views/partials/footer')%>
+    </footer>
+</body>
+
+</html>
